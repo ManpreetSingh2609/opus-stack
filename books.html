@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/styles/book.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <img class="image" src="/assests/logo-light.svg" />
+            </div>
+            <div class="search">
+                <div class="search-div">
+                    <input
+                        type="text"
+                        class="search-box"
+                        id="search-box"
+                        placeholder="Search books by name, author, genre, etc ..."
+                    />
+                </div>
+                <div class="list-book search">
+                    <div class="cards-flex"></div>
+                </div>
+            </div>
+            <div class="nav_links">
+                <!-- <button class="btn login-btn">
+                    <a href="login.html">Login</a>
+                </button> -->
+                <button class="btn sign-btn" id="logout">Sign Out</button>
+            </div>
+        </nav>
+
+        <!-- <div class="filter">
+            <select name="Genre" id="genre">
+                <option value="Fiction">Fiction</option>
+                <option value="Fiction">Drama</option>
+                <option value="Fiction">Sci-Fi</option>
+                <option value="Fiction">Romance</option>
+                <option value="Fiction">Horor</option>
+            </select>
+            <select name="artist" id="artist">
+                <option value="artist">A-z</option>
+                <option value="artist">z-a</option>
+            </select>
+            <select name="date" id="date">
+                <option value="date"> New release</option>
+                <option value="date"> < 1 year</option>
+                <option value="date"> < 5 year</option>
+                <option value="date"> < 10 year</option>
+            </select> 
+        </div>
+        -->
+
+        <div class="options">
+            <div class="filters"><button>Filter</button></div>
+            <div class="all"><button>All</button></div>
+            <div class="fiction"><button>Fiction</button></div>
+            <div class="romantic"><button>Romantic</button></div>
+            <div class="history"><button>History</button></div>
+        </div>
+
+        <div class="page-cards-grid">
+            
+        </div>
+
+        <script src="/script/books.js"></script>
+        <script type="module" src="/script/auth.js"></script>
+    </body>
+</html>

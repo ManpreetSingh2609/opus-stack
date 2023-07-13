@@ -1,0 +1,173 @@
+* {
+    font-family: 'Poppins', sans-serif;
+
+    --background-light: white;
+    --background-dark: black;
+
+    --accent-color: #76ade6;
+    --accent-color-light: #bcdcff;
+    --accent-color-focus: #a5ccfe;
+
+    --text-color-light: "white";
+    --text-color-dark: "black";
+
+    text-decoration: none;
+    list-style: none;
+    border-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/assests/background-vector-dark.svg);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .background {
+    position: absolute;
+} */
+
+/* ------[START]------- NAVBAR ------------- */
+
+form {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px;
+}
+
+.nav_links a {
+    color: var(--text-color-dark);
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    color: white;
+    width: 100px;
+}
+
+.signup-btn {
+    background-color: #005588;
+    margin-left: 20px;
+}
+
+.login-btn {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--background-dark);
+}
+
+/* ------[END]------- NAVBAR ------------- */
+
+/* ------[START]------- LOGIN CONTAINER ------------- */
+
+form {
+    color: var(--background-dark);
+
+    display: flex;
+    justify-self: center;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    border: 3px #76ade6 solid;
+
+    width: 400px;
+    height: 500px;
+
+    /* background-color: rgb(163, 164, 164); */
+    /* background-image: url(../assests/circle-scatter-haikei.svg); */
+
+    /* backdrop-filter: blur(5px); */
+
+    border: 4px linear-gradient(to right, var(--accent-color) 0%, var(--accent-color-focus) 100%) solid;
+    border-radius: 25px;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 500;
+    color: rgb(50 144 198);
+}
+
+h1 {
+    color: rgb(50 144 198);
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    font-size: 16px;
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px var(--accent-color-light) solid;
+    background: #bcdcff;
+    border-radius: 18px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    background-color: var(--accent-color-focus);
+    outline: none;
+}
+
+.submit {
+    margin-top: 10px;
+    width: 80%;
+    padding: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 1s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color-focus) 100%);
+}
+
+.submit:hover {
+    background-position: right center;
+}
+
+/* ------[END]------- LOGIN CONTAINER ------------- */

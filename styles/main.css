@@ -1,0 +1,201 @@
+* {
+    font-family: 'Poppins', sans-serif;
+
+    --background-light: "white";
+    --background-dark: "black";
+
+    --accent-color: #76ade6;
+    --accent-color-light: #bcdcff;
+    --accent-color-focus: #bed5f3;
+
+    --text-color-light: "white";
+    --text-color-dark: "black";
+
+    text-decoration: none;
+    list-style: none;
+    border-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/assests/background-spikes-dark-blue.svg);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .background {
+    position: absolute;
+} */
+
+/* ------[START]------- NAVBAR ------------- */
+
+form {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 30px;
+}
+
+.nav_links a {
+    color: var(--text-color-dark);
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    color: white;
+    width: 100px;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    margin-left: 20px;
+}
+
+.login-btn {
+    border: 3px solid #76ade6;
+    background-color: #00192b;
+    color: #76ade6;
+    font-weight: 500;
+}
+.signup-btn {
+    border: 3px solid #76ade6;
+    color: #00192b;
+    font-weight: 500;
+}
+
+/* ------[END]------- NAVBAR ------------- */
+
+/* ------[START]------- LOGIN CONTAINER ------------- */
+
+form {
+    color: var(--background-dark);
+
+    display: flex;
+    justify-self: center;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    height: 500px;
+
+    /* background-color: rgb(163, 164, 164); */
+
+    backdrop-filter: blur(5px);
+
+    border: 4px linear-gradient(to right, var(--accent-color) 0%, var(--accent-color-focus) 100%) solid;
+    border-radius: 25px;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 500;
+}
+
+h1 {
+    color: var(--background-dark);
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    font-size: 16px;
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px var(--accent-color-light) solid;
+    background: var(--background-light);
+    border-radius: 18px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    background-color: var(--accent-color-focus);
+    outline: none;
+}
+
+.submit {
+    margin-top: 10px;
+    width: 80%;
+    padding: 8px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 1s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color-focus) 100%);
+}
+
+.submit:hover {
+    background-position: right center;
+}
+
+.main-page-illustration {
+    position: absolute;
+    width: 600px;
+    right: 50px;
+    top: 150px;
+}
+
+/* ------[END]------- LOGIN CONTAINER ------------- */
+.bg-pic{
+    float: right;
+    height: 400px;
+    max-width:max-content;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+} 
+.textual{
+    color: #4b6d91;
+    width: 50%;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 72px;
+    font-weight: 700;
+    margin-top: 110px;
+}
+

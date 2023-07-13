@@ -1,0 +1,441 @@
+* {
+    font-family: "Poppins", sans-serif;
+
+    --background-light: white;
+    --background-dark: black;
+    --background-focus: rgb(41, 41, 41);
+    --background-books: rgb(70, 70, 70);
+    --background-dark-blue: #031528;
+
+    --accent-color: #76ade6;
+    --accent-color-light: #bcdcff;
+    --accent-color-focus: #bed5f3;
+
+    --text-color-light: white;
+    --text-color-dark: black;
+
+    text-decoration: none;
+    border-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url(/assests/background-vector-light.svg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-color: var(--background-dark); */
+    background-image: url(../assests/background-vector-dark.svg);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------[START]------- NAVBAR ------------- */
+
+.logo img {
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    width: 510px;
+}
+
+.search-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* z-index: 1; */
+    background-color: var(--background-dark-blue);
+    padding: 10px 0;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.search-box {
+    width: 95%;
+    padding: 10px 0;
+
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    margin: 0 auto;
+
+    background-color: var(--background-dark);
+
+    border: 3px var(--accent-color-light) solid;
+    border-radius: 15px;
+    color: var(--text-color-light);
+
+    font-weight: 500;
+    font-size: 15px;
+    text-indent: 15px;
+}
+
+.search-box:focus {
+    border-style: 3px var(--accent-color) solid;
+    background-color: var(--background-focus);
+}
+
+.list-book {
+    display: none;
+    position: absolute;
+    height: 500px;
+
+    background-color: rgba(3, 21, 40, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    z-index: 1;
+    /* margin-top: -7.5px; */
+    padding-top: 75px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.list-book::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+.list-bookdy::-webkit-scrollbar-track {
+    background: #031528;
+    /* color of the tracking area */
+}
+
+.list-book::-webkit-scrollbar-thumb {
+    background-color: rgb(24, 24, 109);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #031528;
+    /* creates padding around scroll thumb */
+}
+
+.book {
+    height: 150px;
+    width: 95%;
+    background-color: var(--background-books);
+    border-radius: 10px;
+}
+
+.nav_links a {
+    color: black;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--background-dark);
+    color: white;
+}
+
+.sign-btn {
+    background-color: var(--accent-color);
+    margin-left: 20px;
+    color: black;
+}
+
+.login-btn {
+    border: 2px var(--accent-color) solid;
+}
+
+/* ------[END]------- NAVBAR ------------- */
+
+.choose-flex {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.choosegenre-flex {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.choosegenre-flex li {
+    margin: 20px;
+}
+
+.choosegenre-flex a {
+    text-decoration: none;
+    border: var(--accent-border);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: var(--accent-darkBlack);
+}
+
+.highlight:hover {
+    background-color: var(--accent-color);
+    color: var(--accent-light);
+    border-style: none;
+    transition: all ease-in-out 200ms;
+}
+
+.cards-flex {
+    display: none;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    /* margin: 30px 30px 30px 150px; */
+    /* padding: 10px 0px 10px 10px; */
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: var(--background-dark-blue);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.book-img {
+    border-radius: 8px;
+    width: auto;
+    height: 140px;
+    top: 0;
+    bottom: 0;
+    margin: auto 5px;
+}
+
+.description {
+    /* padding: 20px 200px 20px 20px; */
+    padding: 5px 10px;
+}
+
+.container {
+    /* padding-top: 20px; */
+    display: grid;
+    column-gap: 25px;
+    grid-template-columns: 190px 170px;
+    grid-template-rows: 20px 30px;
+}
+
+.bookName {
+    color: var(--text-color-light);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.author {
+    color: rgb(208, 208, 208);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.description-title {
+    color: var(--text-color-light);
+    font-size: 12px;
+    font-style: medium;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.update {
+    color: var(--text-color-light);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.addToBag {
+    border-style: none;
+    color: var(--text-color-light);
+    background-color: var(--accent-color);
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 12px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+
+    width: 150px;
+    height: 100px;
+}
+
+.filter select {
+    height: 30px;
+}
+
+/* -------[START]------------ OPTIONS ----------------- */
+
+.options {
+    left: 0;
+    right: 0;
+    margin: 80px auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    background-color: rgba(3, 21, 40, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    padding: 0 20px;
+}
+
+.options button {
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 15px;
+    align-items: center;
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+.filters button {
+    color: var(--accent-color);
+    background-color: var(--background-dark);
+    border: 3px var(--accent-color) solid;
+}
+
+.all button {
+    color: var(--text-color-dark);
+    background-color: var(--accent-color);
+}
+
+.fiction button {
+    color: var(--text-color-dark);
+    background-color: var(--accent-color);
+}
+
+.romantic button {
+    color: var(--text-color-dark);
+    background-color: var(--accent-color);
+}
+
+.history button {
+    color: var(--text-color-dark);
+    background-color: var(--accent-color);
+}
+
+/* -------[END]------------ OPTIONS ----------------- */
+
+.page-cards-grid {
+    width: 87%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(auto-fill, 120px); */
+    row-gap: 120px;
+    grid-auto-rows: 100px;
+}
+
+@media (max-width: 900px) {
+    .page-cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.page-books {
+    display: flex;
+    flex-direction: row;
+    /* margin: 30px 30px 30px 150px; */
+    /* padding: 10px 0px 10px 10px; */
+    height: 200px;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: rgba(3, 21, 40, 0.7);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.page-book-img {
+    border-radius: 8px;
+    width: auto;
+    height: 190px;
+    top: 0;
+    bottom: 0;
+    margin: auto 5px;
+}
+
+.page-description {
+    /* padding: 20px 200px 20px 20px; */
+    padding: 5px 10px;
+}
+
+.page-container {
+    /* padding-top: 20px; */
+    display: grid;
+    column-gap: 25px;
+    grid-template-columns: 225px 140px;
+    grid-template-rows: 30px 35px;
+}
+
+.page-bookName {
+    color: var(--text-color-light);
+    font-size: 27px;
+    font-style: normal;
+    margin-top: 10px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.page-author {
+    color: rgb(208, 208, 208);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.page-description-title {
+    color: var(--text-color-light);
+    font-size: 15px;
+    font-style: medium;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.page-update {
+    color: var(--text-color-light);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.page-addToBag {
+    border-style: none;
+    color: var(--text-color-light);
+    background-color: var(--accent-color);
+    padding: 7px 17px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 12px;
+}
