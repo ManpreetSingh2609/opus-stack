@@ -96,7 +96,7 @@ document.getElementById("logout").addEventListener("click", function () {
         // Sign-out successful.
         console.log('Sign-out successful.');
         alert('Sign-out successful.');
-        window.location.replace('../main.html');
+        window.location.replace('../index.html');
         //document.getElementById('logout').style.display = 'none';
     }).catch((error) => {
         // An error happened.
