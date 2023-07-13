@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: url(/assests/background-spikes-dark-blue.svg);
+    background-image: url(../assests/background-spikes-dark-blue.svg);
     /* background-size: cover;
     background-repeat: no-repeat; */
     background-position: center center;

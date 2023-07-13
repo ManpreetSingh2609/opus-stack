@@ -39,7 +39,7 @@ window.signup = function (e) {
 
     createUserWithEmailAndPassword(auth, obj.email, obj.password)
         .then(function (success) {
-            window.location.replace('../login.html')
+            window.location.replace('./login.html')
             // alert("SignUp successful.")
         })
         .catch(function (err) {
@@ -60,11 +60,11 @@ window.login = function (e) {
     signInWithEmailAndPassword(auth, obj.email, obj.password)
         .then(function (success) {
             alert("Login Successful")
-            window.location.replace('../books.html')
+            window.location.replace('./books.html')
             // alert("Login successful.")
         })
         .catch(function (err) {
-            window.location.replace('../signup.html')
+            window.location.replace('./signup.html')
             alert("error" + err)
         });
     console.log(obj);
@@ -96,7 +96,7 @@ document.getElementById("logout").addEventListener("click", function () {
         // Sign-out successful.
         console.log('Sign-out successful.');
         alert('Sign-out successful.');
-        window.location.replace('../index.html');
+        window.location.replace('./index.html');
         //document.getElementById('logout').style.display = 'none';
     }).catch((error) => {
         // An error happened.

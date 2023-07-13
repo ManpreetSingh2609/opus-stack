@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: url(/assests/background-vector-dark.svg);
+    background-image: url(../assests/background-vector-dark.svg);
     /* background-size: cover;
     background-repeat: no-repeat; */
     background-position: center center;
