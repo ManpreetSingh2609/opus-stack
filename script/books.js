@@ -208,7 +208,6 @@ const pageDebounce = (fn, time, to = 0) => {
 };
 pageDebounce(pageListBook, 1000);
 
-// const API_KEY = "AIzaSyA0n3bCT4kqrLJnD8hF2-iacgX70Y3VWNc";
 
 // function searchBooks(query) {
 //     const url = `GET https://www.googleapis.com/books/v1/volumes?q=${query}`;
