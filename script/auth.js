@@ -1,4 +1,5 @@
 // Import the functions you need from the SDKs you need
+import {firebaseConfig} from "config.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
@@ -7,16 +8,6 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: "AIzaSyBmVurLeknRCPnyekMBTR1gxsU6PyTEBHo",
-    authDomain: "opusstack.firebaseapp.com",
-    projectId: "opusstack",
-    storageBucket: "opusstack.appspot.com",
-    messagingSenderId: "219330664372",
-    appId: "1:219330664372:web:08c620713c94fa0bf304e1",
-    measurementId: "G-6XBF7KM10T"
-};
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
