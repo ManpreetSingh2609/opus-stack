@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-import {firebaseConfig} from "config.js";
+import {firebaseConfig} from "./config.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
