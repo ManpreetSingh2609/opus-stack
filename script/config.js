@@ -1,5 +1,5 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBmVurLeknRCPnyekMBTR1gxsU6PyTEBHo",
+    apiKey: ${{secrets.APIKEY}},
     authDomain: "opusstack.firebaseapp.com",
     projectId: "opusstack",
     storageBucket: "opusstack.appspot.com",
